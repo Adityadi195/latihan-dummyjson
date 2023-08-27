@@ -28,7 +28,6 @@ public class LoginStepDef {
     public void loginWithInvalidData(String jsonName) {
         File json = new File(Constants.REQ_BODY_LOGIN + "" + jsonName + "");
         loginAPI.postLogin(json);
-
     }
 
     @When("Send post login")
