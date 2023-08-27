@@ -8,7 +8,7 @@ import starter.Utils.Constants;
 import java.io.File;
 
 public class UsersAPI {
-    public static String USERS_PATH = Constants.BASE_URL + "/users/";
+    public static String USERS_PATH = Constants.BASE_URL + "users/add";
     public static String USERS_PARAM = Constants.BASE_URL + USERS_PATH + "{id}";
 
     //USERS
@@ -24,7 +24,7 @@ public class UsersAPI {
     }
 
     @Step("Post users")
-    public void setUsers(File json) {
+    public void postUsers(File json) {
         SerenityRest.given()
                 .contentType(ContentType.JSON)
                 .body(json);

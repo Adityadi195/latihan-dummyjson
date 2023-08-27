@@ -15,4 +15,5 @@ public class Constants {
     public static String REQ_BODY_LOGIN = JSON + "/ReqBody/Login/";
     public static String JSON_SCHEMA_LOGIN = JSON + "/JsonSchema/Login/";
 
+    public static String REQ_BODY_USERS = JSON + "/ReqBody/Users/";
 }
